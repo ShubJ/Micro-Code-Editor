@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="index.js"></script>
+    <link href="prism.css" rel="stylesheet" />
+    <script src="prism.js"></script>
+</head>
+
+<body>
+    <main class="view">
+        <h1 class="title">Code Editor <small>With syntax highlight*</small></h1>
+        <div class="window">
+            <div class="window-header">
+                <div class="action-buttons"></div>
+                <select class="language">
+                    <option value="javascript">Javascript</option>
+                    <option value="html">HTML</option>
+                    <option value="php">PHP</option>
+                </select>
+            </div>
+
+            <div class="window-body">
+                <textarea class="code-input">// Switch the language and put some code on me :)
+                    // This is 'Hello World' example.
+
+                    function greetings(name){
+                        name = name || "stranger";
+                        return "Hello, " + name + "!";
+                    }
+
+                    window.onLoad = alert(greetings());
+                </textarea>
+                <pre class="code-output">
+                    <code class="language-javascript">
+
+
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
